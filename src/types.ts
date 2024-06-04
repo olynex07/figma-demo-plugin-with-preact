@@ -5,12 +5,8 @@ export interface ShowIconInEditorHandler extends EventHandler {
   handler: (iconUrl: string) => void;
 }
 
-export interface CloseHandler extends EventHandler {
-  name: 'CLOSE';
-  handler: () => void;
-}
-
 export interface Icon {
   _id: string;
   icon: string;
+  type:string
 }
